@@ -1606,6 +1606,9 @@ def longtests(args):
 
 def _igvFallbackJDK(env):
     igvHomes = [h for h in mx._java_homes if h.version < mx.VersionSpec("1.8.0_20") or h.version >= mx.VersionSpec("1.8.0_40")]
+    if not igvHomes:
+        mx.log("JDKs from 1.8.0_20 to (excluding) 1.8.0_40 are incompatible with IGV because of a bug.")
+        sys.exit(1)
     if igvHomes[0] != mx._java_homes[0]:
         env = dict(env)
         fallbackJDK = igvHomes[0]
