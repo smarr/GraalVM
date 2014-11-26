@@ -184,7 +184,7 @@ suite = {
       "sourceDirs" : ["src"],
       "dependencies" : [],
       "checkstyle" : "com.oracle.graal.graph",
-      "javaCompliance" : "1.7",
+      "javaCompliance" : "1.8",
     },
 
     "com.oracle.nfi.test" : {
@@ -196,7 +196,7 @@ suite = {
         "JUNIT",
       ],
       "checkstyle" : "com.oracle.graal.graph",
-      "javaCompliance" : "1.7",
+      "javaCompliance" : "1.8",
     },
 
     "com.oracle.graal.api.collections" : {
@@ -1087,7 +1087,7 @@ suite = {
       "subDir" : "graal",
       "sourceDirs" : ["src"],
       "dependencies" : [],
-      "javaCompliance" : "1.7",
+      "javaCompliance" : "1.8",
       "workingSets" : "API,Truffle",
     },
 
@@ -1099,7 +1099,7 @@ suite = {
         "JUNIT",
       ],
       "checkstyle" : "com.oracle.graal.graph",
-      "javaCompliance" : "1.7",
+      "javaCompliance" : "1.8",
       "workingSets" : "API,Truffle,Test",
     },
 
@@ -1108,7 +1108,7 @@ suite = {
       "sourceDirs" : ["src"],
       "dependencies" : ["com.oracle.truffle.api"],
       "checkstyle" : "com.oracle.truffle.api",
-      "javaCompliance" : "1.7",
+      "javaCompliance" : "1.8",
       "workingSets" : "API,Truffle,Codegen",
     },
 
@@ -1120,7 +1120,7 @@ suite = {
         "JUNIT",
       ],
       "checkstyle" : "com.oracle.graal.graph",
-      "javaCompliance" : "1.7",
+      "javaCompliance" : "1.8",
       "annotationProcessors" : ["com.oracle.truffle.dsl.processor"],
       "workingSets" : "API,Truffle,Codegen,Test",
     },
@@ -1130,7 +1130,7 @@ suite = {
       "sourceDirs" : ["src"],
       "dependencies" : ["com.oracle.truffle.api.dsl"],
       "checkstyle" : "com.oracle.graal.graph",
-      "javaCompliance" : "1.7",
+      "javaCompliance" : "1.8",
       "workingSets" : "Truffle,Codegen",
     },
 
@@ -1139,7 +1139,7 @@ suite = {
       "sourceDirs" : ["src"],
       "dependencies" : ["com.oracle.truffle.api"],
       "checkstyle" : "com.oracle.truffle.api",
-      "javaCompliance" : "1.7",
+      "javaCompliance" : "1.8",
       "workingSets" : "API,Truffle",
     },
 
@@ -1148,7 +1148,7 @@ suite = {
       "sourceDirs" : ["src"],
       "dependencies" : ["com.oracle.truffle.api.object"],
       "checkstyle" : "com.oracle.graal.graph",
-      "javaCompliance" : "1.7",
+      "javaCompliance" : "1.8",
       "workingSets" : "Truffle",
     },
 
@@ -1157,7 +1157,7 @@ suite = {
       "sourceDirs" : ["src"],
       "dependencies" : ["com.oracle.truffle.object"],
       "checkstyle" : "com.oracle.graal.graph",
-      "javaCompliance" : "1.7",
+      "javaCompliance" : "1.8",
       "workingSets" : "Truffle",
     },
 
@@ -1267,7 +1267,7 @@ suite = {
       "path" : "build/truffle.jar",
       "subDir" : "graal",
       "sourcesPath" : "build/truffle.src.zip",
-      "javaCompliance" : "1.7",
+      "javaCompliance" : "1.8",
       "dependencies" : [
         "com.oracle.truffle.api.dsl",
         "com.oracle.nfi",
@@ -1294,7 +1294,7 @@ suite = {
       "path" : "build/truffle-dsl-processor.jar",
       "subDir" : "graal",
       "sourcesPath" : "build/truffle-dsl-processor.src.zip",
-      "javaCompliance" : "1.7",
+      "javaCompliance" : "1.8",
       "dependencies" : ["com.oracle.truffle.dsl.processor"],
       "distDependencies" : ["TRUFFLE"],
     }
