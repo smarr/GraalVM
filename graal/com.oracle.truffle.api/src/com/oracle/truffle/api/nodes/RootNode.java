@@ -79,6 +79,10 @@ public abstract class RootNode extends Node {
         return false;
     }
 
+    public RootNode cloneRootNode() {
+        return NodeUtil.cloneNode(this);
+    }
+
     /**
      * Reports the execution count of a loop that is a child of this node. The optimization
      * heuristics can use the loop count to guide compilation and inlining.

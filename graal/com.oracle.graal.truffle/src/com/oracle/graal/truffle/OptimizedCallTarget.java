@@ -104,7 +104,7 @@ public class OptimizedCallTarget extends InstalledCode implements RootCallTarget
         if (root == null || !root.isCloningAllowed()) {
             return null;
         }
-        return NodeUtil.cloneNode(root);
+        return root.cloneRootNode();
     }
 
     public Assumption getNodeRewritingAssumption() {
