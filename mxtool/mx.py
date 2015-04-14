@@ -3571,7 +3571,11 @@ def clean(args, parser=None):
                 if genDir != '' and exists(genDir):
                     log('Clearing {0}...'.format(genDir))
                     for f in os.listdir(genDir):
-                        _rmtree(join(genDir, f))
+                        f_path = join(genDir, f)
+                        if os.path.isdir(f_path):
+                            _rmtree(f_path)
+                        else:
+                            _rmIfExists(f_path)
 
 
                 outputDir = p.output_dir()
