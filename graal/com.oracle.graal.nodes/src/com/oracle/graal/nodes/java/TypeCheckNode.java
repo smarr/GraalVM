@@ -71,7 +71,7 @@ public final class TypeCheckNode extends UnaryOpLogicNode implements Lowerable, 
             return this;
         }
         ObjectStamp objectStamp = (ObjectStamp) forValue.stamp();
-        assert objectStamp.nonNull();
+// assert objectStamp.nonNull();
 
         ResolvedJavaType stampType = objectStamp.type();
         if (stampType != null) {
