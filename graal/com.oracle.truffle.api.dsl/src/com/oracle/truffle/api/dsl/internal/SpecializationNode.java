@@ -472,30 +472,37 @@ public abstract class SpecializationNode extends Node {
     }
 
     protected Object unsupported(Frame frame) {
+        CompilerDirectives.transferToInterpreter();
         throw new UnsupportedSpecializationException(findRoot(), getSuppliedChildren());
     }
 
     protected Object unsupported(Frame frame, Object o1) {
+        CompilerDirectives.transferToInterpreter();
         throw new UnsupportedSpecializationException(findRoot(), getSuppliedChildren(), o1);
     }
 
     protected Object unsupported(Frame frame, Object o1, Object o2) {
+        CompilerDirectives.transferToInterpreter();
         throw new UnsupportedSpecializationException(findRoot(), getSuppliedChildren(), o1, o2);
     }
 
     protected Object unsupported(Frame frame, Object o1, Object o2, Object o3) {
+        CompilerDirectives.transferToInterpreter();
         throw new UnsupportedSpecializationException(findRoot(), getSuppliedChildren(), o1, o2, o3);
     }
 
     protected Object unsupported(Frame frame, Object o1, Object o2, Object o3, Object o4) {
+        CompilerDirectives.transferToInterpreter();
         throw new UnsupportedSpecializationException(findRoot(), getSuppliedChildren(), o1, o2, o3, o4);
     }
 
     protected Object unsupported(Frame frame, Object o1, Object o2, Object o3, Object o4, Object o5) {
+        CompilerDirectives.transferToInterpreter();
         throw new UnsupportedSpecializationException(findRoot(), getSuppliedChildren(), o1, o2, o3, o4, o5);
     }
 
     protected Object unsupported(Frame frame, Object... args) {
+        CompilerDirectives.transferToInterpreter();
         throw new UnsupportedSpecializationException(findRoot(), getSuppliedChildren(), args);
     }
 
