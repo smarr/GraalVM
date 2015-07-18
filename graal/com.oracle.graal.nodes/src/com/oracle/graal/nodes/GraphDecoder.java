@@ -987,7 +987,7 @@ public class GraphDecoder {
 
     protected void registerNode(LoopScope loopScope, int nodeOrderId, Node node, boolean allowOverwrite, boolean allowNull) {
         assert node == null || node.isAlive();
-        assert allowNull || node != null;
+        // assert allowNull || node != null;
         assert allowOverwrite || lookupNode(loopScope, nodeOrderId) == null;
         loopScope.createdNodes[nodeOrderId] = node;
     }
