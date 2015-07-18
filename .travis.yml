@@ -1,0 +1,13 @@
+language: java
+jdk:
+  - oraclejdk8
+sudo: false
+env:
+    - EXTRA_JAVA_HOMES=/usr/lib/jvm/java-8-oracle
+script:
+    - ./mx.sh build
+    - ./mx.sh unittest
+    - ./mx.sh checkheaders
+    - ./mx.sh checkcopyright
+    - ./mx.sh checkstyle
+    - ./mx.sh findbugs
